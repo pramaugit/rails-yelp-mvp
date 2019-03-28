@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Restaurants</h1>
+  <div class="row">
+    <% @restaurants.each do |res| %>
+      <div class="col col-xs-12 col-sm-4">
+         <h3><%=res.name%></h3>
+         <p><%=res.address%></p>
+         <p><%=res.phone_number%></p>
+         <p><%=res.category%></p>
+      </div>
+    <%end%>
+  </div>
+</div>
+
+
